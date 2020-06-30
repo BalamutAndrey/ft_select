@@ -1,0 +1,32 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "clang build active file",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-g",
+                "~/work/ft_select/srcs/*.c",
+                "~/work/ft_select/libft/*.c",
+                "~/work/ft_select/libft/printf/*.c",
+                "-I",
+                "~/work/ft_select/includes",
+                "-I",
+                "~/work/ft_select/includes/libft",
+                "-I",
+                "~/work/ft_select/includes/printf",
+                "-Wall",
+                "-Wextra",
+                "-Werror",
+                "-lncurses",
+                "-ltermcap",
+                "-o",
+                "~/work/ft_select/ft_select"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
